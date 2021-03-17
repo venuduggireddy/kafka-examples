@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    bootstrap-servers:
+      - 127.17.0.1:9091
+    template:
+      default-topic: random-number
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
